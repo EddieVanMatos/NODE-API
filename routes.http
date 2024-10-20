@@ -1,0 +1,29 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+
+{
+  "title": "vaca amarela",
+  "description": "Esse é o primeiro vídeo",
+  "duration": 180
+}
+
+###
+// ?search="texto" (para filtrar)
+GET  http://localhost:3333/videos?search=vaca branca
+
+###
+
+PuT http://localhost:3333/videos/6ebcd90e-0843-46a3-b12b-9a1be1ae397d
+Content-Type: application/json
+
+
+{
+  "title": "Video 03",
+  "description": "Esse é o primeiro vídeo",
+  "duration": 180
+}
+
+###
+
+DELETE  http://localhost:3333/videos/6ebcd90e-0843-46a3-b12b-9a1be1ae397d
