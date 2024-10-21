@@ -1,20 +1,21 @@
+//routes.http
 POST http://localhost:3333/videos
 Content-Type: application/json
 
 
 {
-  "title": "vaca amarela",
-  "description": "Esse é o primeiro vídeo",
+  "title": "NODE",
+  "description": "ESTUDE node.js",
   "duration": 180
 }
-
+ 
 ###
 // ?search="texto" (para filtrar)
-GET  http://localhost:3333/videos?search=vaca branca
+GET  http://localhost:3333/videos?search=
 
 ###
 
-PuT http://localhost:3333/videos/6ebcd90e-0843-46a3-b12b-9a1be1ae397d
+PuT http://localhost:3333/videos/
 Content-Type: application/json
 
 
@@ -26,4 +27,4 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:3333/videos/6ebcd90e-0843-46a3-b12b-9a1be1ae397d
+DELETE  http://localhost:3333/videos/
